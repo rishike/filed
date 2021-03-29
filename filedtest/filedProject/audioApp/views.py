@@ -89,14 +89,29 @@ class CreateViewSet(generics.GenericAPIView):
             return JsonResponse(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
+class SongListView(generics.ListCreateAPIView):
+    queryset = Song.objects.all()
+    serializer_class = SongSerializer
+
+
 class SongDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Song.objects.all()
     serializer_class = SongSerializer
 
 
+class PodcastListView(generics.ListCreateAPIView):
+    queryset = Podcast.objects.all()
+    serializer_class = PodcastSerializer
+
+
 class PodcastDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Podcast.objects.all()
     serializer_class = PodcastSerializer
+
+
+class AudiobookListView(generics.ListCreateAPIView):
+    queryset = Audiobook.objects.all()
+    serializer_class = AudiobookSerializer
 
 
 class AudiobookDetail(generics.RetrieveUpdateDestroyAPIView):
