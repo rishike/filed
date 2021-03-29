@@ -15,9 +15,12 @@ Installation
 Endpoints
 ---------
 1. POST http://127.0.0.1:8000/api/audio/create
-2. GET,DELETE,PUT http://127.0.0.1:8000/api/audio/song/1
-3. GET,DELETE,PUT http://127.0.0.1:8000/api/audio/podcast/1
-4. GET,DELETE,PUT http://127.0.0.1:8000/api/audio/audiobook/1
+2. GET http://127.0.0.1:8000/api/audio/song/
+3. GET,DELETE,PUT http://127.0.0.1:8000/api/audio/song/1
+4. GET http://127.0.0.1:8000/api/audio/podcast/
+5. GET,DELETE,PUT http://127.0.0.1:8000/api/audio/podcast/1
+6. GET http://127.0.0.1:8000/api/audio/audiobook/
+7. GET,DELETE,PUT http://127.0.0.1:8000/api/audio/audiobook/1
 
 HEADERS
 --------
